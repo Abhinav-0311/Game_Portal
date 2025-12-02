@@ -1,47 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Gaming Portal</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #eee; }
-    header { background: #222; padding: 1rem 2rem; }
-    header h1 { margin: 0; }
-    nav a { margin-right: 1rem; color: #0ff; text-decoration: none; }
-    main { padding: 2rem; }
-    .game-link { padding: 1rem; background: #222; margin-bottom: 1rem; border-radius: 8px; }
-    footer { text-align: center; padding: 1rem; background: #222; margin-top: 2rem; font-size: 0.9rem; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Game Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #020617;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 2px solid #22d3ee;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #22d3ee;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #cbd5f5;
+        }
+
+        nav {
+            background-color: #020617;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #67e8f9;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background-color: #020617;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(34, 211, 238, 0.25);
+        }
+
+        section h2 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #22d3ee;
+            color: #020617;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #67e8f9;
+        }
+
+        footer {
+            background-color: #020617;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            border-top: 2px solid #22d3ee;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>My Gaming Portal</h1>
-    <nav>
-      <a href="#featured">Featured Game</a>
-      <a href="#all-games">All Games</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="featured">
-      <h2>Featured Game</h2>
-      <p>Welcome to my gaming portal. Click below to play my cloud-hosted game!</p>
-      <!-- You will replace # with your real game link in Objective 3 -->
-      <div class="game-link">
-        <h3>My Cloud Game</h3>
-        <p><a href="#" target="_blank">Play Now</a></p>
-      </div>
+<header>
+    <h1>Game Portal</h1>
+    <p>A cloud-hosted gaming website deployed using GitHub Pages</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#game">Play Game</a>
+    <a href="#tech">Technology</a>
+    <a href="#repository">GitHub Repository</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>
+            This game portal has been developed as part of an academic practical
+            activity. The website is hosted using GitHub Pages and provides access
+            to an online game hosted on a cloud platform.
+        </p>
     </section>
 
-    <section id="all-games">
-      <h2>Other Games</h2>
-      <p>More games will be added here soon.</p>
-    </section>
-  </main>
+    <section id="game">
+        <h2>Cloud-Hosted Game</h2>
+        <p>
+            The following link allows users to access the game. The game is
+            deployed on a cloud service platform and does not require login.
+        </p>
 
-  <footer>
-    &copy; 2025 My Gaming Portal
-  </footer>
+        <a class="btn"
+           href="https://Abhinav-0311.github.io/Game_Portal/game.html"
+           target="_blank">
+           Play Game
+        </a>
+    </section>
+
+    <section id="tech">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git and GitHub</li>
+            <li>GitHub Pages (Cloud Hosting)</li>
+        </ul>
+    </section>
+
+    <section id="repository">
+        <h2>GitHub Repository</h2>
+        <p>
+            The complete source code for this project is maintained on GitHub.
+            The repository has been shared with multiple users for collaboration.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/Abhinav-0311/Game_Portal"
+           target="_blank">
+           View Repository
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 | Game Portal | Cloud Computing Practical
+</footer>
+
 </body>
 </html>
